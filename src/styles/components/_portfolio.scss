@@ -1,0 +1,27 @@
+.portfolio {
+    z-index: 1;
+    padding: 1%;
+    margin-top: 40px;
+    color: white;
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+        padding: 1%;
+        border: solid;
+    }
+
+    img {
+            object-fit: contain;
+            width: 35%;
+            border: solid;
+        }
+    
+    .portfolioText {
+        width: 50%;
+    }
+}
+
+
+

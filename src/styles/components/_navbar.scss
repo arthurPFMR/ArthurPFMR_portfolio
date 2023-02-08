@@ -1,0 +1,114 @@
+.navbar {
+    position: fixed;
+    background-color: black;
+    opacity: 0.8;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    max-height: 40px;
+    margin-bottom: 25vh;
+    
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+
+    img {
+        max-width: 45px;
+        padding-top: 8px;
+    }
+
+    .title {
+        color: $grey;
+        font-weight: 700;
+        font-size: 1rem;
+        // margin-left: -2.5rem;
+
+        .firstName {
+            letter-spacing: 0.95rem;
+            text-align: end;
+            // opacity: 0.9;
+        }
+
+        .name {
+            font-weight: 900;
+        }
+    }
+    // .firstName::after {
+    //     position: absolute;
+    //     content: attr(data-text);
+    //     text-shadow: -1px 0 red;
+    //     color: white;
+    //     opacity: 0.2;
+    //     overflow: hidden;
+    //     clip: rect(0, 900px, 0, 0);
+    //     animation: animate-glitch 6s infinite linear alternate-reverse;
+    //   }
+
+      .firstName::before {
+        position: absolute;
+        content: attr(data-text);
+        text-shadow: 1.5px 0 rgb(255, 255, 255);
+        color: white;
+        opacity: 0.5;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: animate-glitch 4s infinite linear alternate-reverse;
+      }
+    // .name::after {
+    //     margin-left: -9.2%;
+    //     position: absolute;
+    //     content: attr(data-text);
+    //     text-shadow: -1.5px 0 red;
+    //     color: $grey;
+    //     // opacity: 0.2;
+    //     overflow: hidden;
+    //     clip: rect(0, 900px, 0, 0);
+    //     animation: animate-glitch 6s infinite linear alternate-reverse;
+    //   }
+
+      .name::before {
+        position: absolute;
+        content: attr(data-text);
+        text-shadow: 1px 0 rgb(255, 255, 255);
+        color: $grey;
+        // opacity: 0.2;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: animate-glitch 4s infinite linear alternate-reverse;
+      }
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 1.5rem;
+
+    li {
+        color: $grey;
+        // opacity: 0.5;
+        font-weight: 800;
+    }
+
+    li:hover {
+        color: black;
+        background-color: white;
+        animation: heartbeat 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite;
+    }
+}
+
+@media (max-width: 1024px){
+
+    ul {
+        display: none;
+    }
+}
+
+
