@@ -5,6 +5,7 @@ const Description = () => {
   return (
     <div className="description">
       <div className="left">
+        <h1>
         <p className="descripionPartOne">DÉVELOPPEUR</p>
         <p className="descripionPartTwo margin">FRONTEND</p>
         <p className="descripionPartThree margin">
@@ -23,6 +24,7 @@ const Description = () => {
             </span>
           </div>
         </p>
+        </h1>
       </div>
       <div className="right">
         <img src={bioImg} alt="Arthur" />

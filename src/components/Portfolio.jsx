@@ -8,12 +8,15 @@ import getData from "../assets/database/projects.json";
 
 const Portfolio = () => {
   return (
-    <div>
-      <ul className="portfolio">
+    <div className="portfolio">
+      <h2>PORTFOLIO</h2>
+      <ul className="flexCard">
         {getData.projects.map((projects, id) => (
           <div>
+            <li className="projects">
             <img src={projects.image} alt="lala" />
-            <li key={id}>{projects.description}</li>
+            <p className="portfolioText" key={id}>{projects.description}</p>
+            </li>
           </div>
         ))}
       </ul>
