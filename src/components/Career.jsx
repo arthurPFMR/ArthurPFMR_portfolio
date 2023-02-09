@@ -4,6 +4,7 @@ const Career = () => {
   return (
     <div className="career">
       <h2>PARCOURS</h2>
+      <div className="bar"></div>
       <div className="careerText">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         dolorem nostrum deserunt est rem similique mollitia fuga, placeat, nam

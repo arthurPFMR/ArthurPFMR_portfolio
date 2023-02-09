@@ -10,6 +10,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <h2>PORTFOLIO</h2>
+      <div className="bar"></div>
       <ul className="flexCard">
         {getData.projects.map((projects, id) => (
           <div>

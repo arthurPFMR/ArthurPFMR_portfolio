@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 1;
-    padding: 1%;
+    padding: 2%;
     margin-top: 40px;
     color: white;
 
@@ -15,6 +15,7 @@
     .projects {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 3%;
         padding: 1%;
         // border: solid;
@@ -24,13 +25,40 @@
             object-fit: contain;
             width: 500px;
             max-height: 400px;
+            max-height: 300px;
             border: solid;
+            background-color: white;
+            filter: grayscale(1);
         }
     
     .portfolioText {
         width: 50%;
     }
 }
+
+// responsive_______________________________________
+@media (max-width: 1024px){
+    .portfolioText {
+        min-width: 90%;
+        padding-top: 2%;
+    }
+}
+
+@media (max-width: 768px){
+    .portfolio {
+
+        img {
+            width: 300px;
+            max-height: 200px;
+        }
+
+        .portfolioText {
+            font-size: x-small;
+        }
+    }
+}
+
+
 
 
 

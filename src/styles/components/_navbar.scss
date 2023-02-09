@@ -98,15 +98,57 @@
     }
 
     li:hover {
+        cursor: pointer;
         color: black;
         background-color: white;
         animation: heartbeat 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite;
     }
 }
 
+.sideNavbar {
+    position: fixed;
+    right: 0;
+    // padding: 2%;
+    top: 40%;
+    width: 3%;
+   
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+
+        gap: 55px;
+
+    }
+
+    .icons:hover {
+        cursor: pointer;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+
+    }
+
+    img:hover {
+        border: solid white;
+        border-radius: 50%;
+    }
+}
+
+// responsive__________________________________________
+
 @media (max-width: 1024px){
 
-    ul {
+    .menu {
+        font-size:x-small ;
+    }
+}
+
+@media (max-width: 768px){
+
+    .menu {
         display: none;
     }
 }

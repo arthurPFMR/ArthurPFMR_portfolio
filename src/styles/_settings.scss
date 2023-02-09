@@ -28,9 +28,25 @@ a {
     height: 300vh;
     width: 100%;
     content: "";
-    opacity: .175;  
-    background: url("../assets/images/noise.gif") ;
+    opacity: .175;
+    background: url("../assets/images/noise.gif");
     z-index: 0;
 }
 
-$grey: rgb(147, 147, 147)
+$grey: rgb(147, 147, 147);
+
+.bar {
+    border: solid 1px;
+    margin-bottom: 2vh;
+}
+
+
+
+
+// responsive________________________________________
+
+@media (max-width: 768px){
+    h2 {
+        font-size: small;
+    }
+}
