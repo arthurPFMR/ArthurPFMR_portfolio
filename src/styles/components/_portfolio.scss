@@ -4,8 +4,9 @@
     flex-wrap: wrap;
     z-index: 1;
     padding: 2%;
-    margin-top: 40px;
+    margin-top: 10vh;
     color: white;
+    margin-bottom: 15vh;
 
     .flexCard {
         display: flex;
@@ -28,11 +29,11 @@
             max-height: 300px;
             border: solid;
             background-color: white;
-            filter: grayscale(1);
+            // filter: grayscale(1);
         }
     
     .portfolioText {
-        width: 50%;
+        width: 45%;
     }
 }
 

@@ -1,21 +1,37 @@
 .career {
     z-index: 1;
-    margin-top: 15vh;
+    // margin-top: 15vh;
     padding: 2%;
     color: white;
-    // height: 800px;
     width: 90%;
-    // border: solid;
+    height: 100vh;
 
-    .careerText{
+    .careerContent {    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 3%;
+    }
+
+    .careerText {
         padding: 1%;
+        width: 60%;
+    }
+
+    img {
+        transform: rotateY(180deg);
+        max-width: 22vw;
+        margin-top: 1vh;
+        filter: grayscale(1);
+        border: solid;
     }
 }
 
 
 // responsive_____________________________________
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .careerText {
         font-size: x-small;
     }

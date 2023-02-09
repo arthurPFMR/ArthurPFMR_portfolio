@@ -1,10 +1,15 @@
 import React from "react";
+import bioImg from "../assets/images/ident.png";
 
 const Career = () => {
   return (
     <div className="career">
       <h2>PARCOURS</h2>
       <div className="bar"></div>
+      <div className="careerContent">
+        <div className="careerImg">
+          <img src={bioImg} alt="P. Arthur" />
+        </div>
       <div className="careerText">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         dolorem nostrum deserunt est rem similique mollitia fuga, placeat, nam
@@ -38,6 +43,7 @@ const Career = () => {
         odit excepturi eligendi itaque illo consectetur ea voluptate tenetur
         veritatis. Excepturi nobis at optio dignissimos nam! Id, quaerat. Nihil
         sunt veritatis nemo esse odio, vero consequuntur natus?
+      </div>
       </div>
     </div>
   );

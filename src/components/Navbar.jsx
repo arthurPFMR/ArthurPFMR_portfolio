@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Link, ScrollLink } from "react-scroll";
+import { Link } from "react-scroll";
 import LogoImg from "../assets/images/logo.ico";
 import NavbarIcon from "../assets/images/croix.ico";
 
 const Navbar = () => {
+
   return (
     <div className="navbar">
       <div className="leftContainer">
@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className="nav rightContainer">
         <ul className="menu">
-          <Link to="noise" spy={true} smooth={true} duration={500}>
+          <Link data-text="ACCUEIL" to="top" spy={true} smooth={true} duration={500}>
             <li>ACCUEIL</li>
           </Link>
           <Link
@@ -56,7 +56,7 @@ const Navbar = () => {
       </div>
       <div className="sideNavbar">
         <ul className="icons">
-          <Link to="noise" spy={true} smooth={true} duration={500}>
+          <Link to="top" spy={true} smooth={true} duration={500}>
             <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
           </Link>
           <Link

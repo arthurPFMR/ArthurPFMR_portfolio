@@ -4,6 +4,7 @@ import bioImg from "../assets/images/ident.png";
 const Description = () => {
   return (
     <div className="description">
+      <div className="top"></div>
       <div className="left">
         <h1>
         <p className="descripionPartOne">DÉVELOPPEUR</p>

@@ -2,7 +2,6 @@
     display: flex;
     color: white;
     padding-top: 20%;
-    padding-bottom: 10%;
     padding-left: 1%;
     font-size: 7vw;
     font-weight: 700;
@@ -14,8 +13,8 @@
 
     img {
         max-width: 22vw;
-        margin-top: 1vh;
-        margin-left: 18vw;
+        margin-top: 55px;
+        margin-left: 13vw;
         filter: grayscale(1);
         border: solid;
     }
@@ -48,11 +47,24 @@
     }
 }
 
-// @media (max-width: 1024px){
-//     .description {
-//         padding-top: 15vh;
-//     }
-// }
+.top {
+    margin-top: -35vh;
+    height: 2px;
+}
+
+
+// responsive
+
+@media (max-width: 768px) {
+
+    .description {
+        padding-top: 35%;
+    }
+
+    img {
+       
+    }
+}
 
 
 

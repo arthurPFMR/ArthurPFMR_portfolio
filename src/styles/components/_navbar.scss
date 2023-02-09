@@ -10,7 +10,7 @@
     z-index: 2;
     max-height: 40px;
     margin-bottom: 25vh;
-    
+
 }
 
 .leftContainer {
@@ -40,6 +40,7 @@
             font-weight: 900;
         }
     }
+
     // .firstName::after {
     //     position: absolute;
     //     content: attr(data-text);
@@ -51,16 +52,17 @@
     //     animation: animate-glitch 6s infinite linear alternate-reverse;
     //   }
 
-      .firstName::before {
+    .firstName::before {
         position: absolute;
         content: attr(data-text);
-        text-shadow: 1.5px 0 rgb(255, 255, 255);
+        text-shadow: 3px 0 rgb(255, 255, 255);
         color: white;
         opacity: 0.5;
         overflow: hidden;
         clip: rect(0, 900px, 0, 0);
         animation: animate-glitch 4s infinite linear alternate-reverse;
-      }
+    }
+
     // .name::after {
     //     margin-left: -9.2%;
     //     position: absolute;
@@ -73,7 +75,7 @@
     //     animation: animate-glitch 6s infinite linear alternate-reverse;
     //   }
 
-      .name::before {
+    .name::before {
         position: absolute;
         content: attr(data-text);
         text-shadow: 1px 0 rgb(255, 255, 255);
@@ -82,7 +84,7 @@
         overflow: hidden;
         clip: rect(0, 900px, 0, 0);
         animation: animate-glitch 4s infinite linear alternate-reverse;
-      }
+    }
 }
 
 .menu {
@@ -95,30 +97,40 @@
         color: $grey;
         // opacity: 0.5;
         font-weight: 800;
+        
     }
+    
 
     li:hover {
         cursor: pointer;
         color: black;
         background-color: white;
-        animation: heartbeat 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite;
+        animation: heartbeat 1s cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    .active {
+        background-color: white;      
+
+        li {
+            color: black;
+        }
     }
 }
+
 
 .sideNavbar {
     position: fixed;
     right: 0;
-    // padding: 2%;
+    padding: 1%;
     top: 40%;
     width: 3%;
-   
+
 
     .icons {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
         gap: 55px;
-
     }
 
     .icons:hover {
@@ -126,31 +138,59 @@
     }
 
     img {
+        margin-top: 5px;
         width: 25px;
-        height: 25px;
-
+        height: 20px;
+        transform: rotate(90deg);
     }
 
     img:hover {
-        border: solid white;
-        border-radius: 50%;
+        transform: rotateY(45deg);
+    }
+
+    .active {
+        // border: solid white 4px;
+        // border-radius: 50%;
+        background-image: url("../../assets/images/round.ico");
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: heartbeat 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) infinite;
+
+        img {
+            transform: rotateY(45deg);
+        }
     }
 }
 
 // responsive__________________________________________
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
     .menu {
-        font-size:x-small ;
+        font-size: x-small;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
     .menu {
         display: none;
     }
+
+    .sideNavbar {
+
+        .icons {
+            gap: 30px;
+        }
+
+        img {
+            height: 10px;
+            width: 10px;
+        }
+        
+        .active {
+            border: solid white 2px;
+
+        }
+    }
 }
-
-
