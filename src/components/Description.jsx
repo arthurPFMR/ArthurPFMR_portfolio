@@ -7,6 +7,7 @@ const Description = () => {
       <div className="top"></div>
       <div className="left">
         <h1>
+          {/* changer les p car erreur console DOMnesting */}
         <p className="descripionPartOne">DÉVELOPPEUR</p>
         <p className="descripionPartTwo margin">FRONTEND</p>
         <p className="descripionPartThree margin">

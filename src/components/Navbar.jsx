@@ -29,7 +29,7 @@ const Navbar = () => {
             to="portfolio"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             <li>PORTFOLIO</li>
@@ -38,7 +38,7 @@ const Navbar = () => {
             to="career"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             <li>PARCOURS</li>
@@ -47,7 +47,7 @@ const Navbar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             <li>CONTACT</li>
@@ -63,7 +63,7 @@ const Navbar = () => {
             to="portfolio"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
@@ -72,7 +72,7 @@ const Navbar = () => {
             to="career"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
@@ -81,7 +81,7 @@ const Navbar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
