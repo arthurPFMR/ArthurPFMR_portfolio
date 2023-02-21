@@ -49,9 +49,11 @@
         width: 20px;
         background-color: transparent;
         border-radius: 25px;
+        margin-left: 57.5vw;
+        z-index: 2;
 
         &:hover {
-            box-shadow:  0 0 15px 2px white;
+            box-shadow: 0 0 15px 2px white;
         }
     }
 
