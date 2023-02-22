@@ -4,97 +4,81 @@
     flex-wrap: wrap;
     z-index: 1;
     padding: 2%;
-    margin-top: 10vh;
+    margin-top: 20vh;
     color: white;
     margin-bottom: 15vh;
+    height: 100vh;
+    position: relative;
+}
 
-    .flexCard {
-        display: flex;
-        flex-direction: column;
-        gap: 2vh;
-    }
+.slideBtn {
+    margin-left: 48.1%;
+}
 
-    .projects {
-        margin-top: 8vh;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 3%;
-        padding: 1%;
-        // border: solid;
-    }
-
-    .tvBorder {
-        margin-top: 8vh;
-        position: absolute;
-        // object-fit: contain;
-        // width: 500px;
-        max-height: 600px;
-        // border: solid;
-        // background-color: white;
-        // filter: grayscale(1);
-    }
-
-    .projectsImg {
-        margin-top: 45px;
-        margin-left: 25px;
-        height: 490px;
-        border: solid red;
-    }
-
-    .previousBtn {
-        border: solid red;
+.projectsBtn {
+    margin-top: 2.7%;
+    z-index: 3;
+    position: absolute;
+}
+    .nextBtn {
+        border: solid transparent;
         cursor: pointer;
-        height: 20px;
-        width: 20px;
+        height: 3%;
+        width: 1.8%;
+        margin-left: 5%;
         background-color: transparent;
         border-radius: 25px;
-        margin-left: 57.5vw;
-        z-index: 2;
-
+    
         &:hover {
-            box-shadow: 0 0 15px 2px white;
+            box-shadow: 0 0 15px 2px rgb(255, 255, 255);
+            background-color: white;
+            opacity: 0.5;
         }
     }
 
+    .prevBtn {
+        border: solid transparent;
+        cursor: pointer;
+        height: 3%;
+        width: 1.8%;
+        background-color: transparent;
+        border-radius: 25px;
+    
+        &:hover {
+            box-shadow: 0 0 15px 2px rgb(255, 255, 255);
+            background-color: white;
+            opacity: 0.5;
+        }
+    }
+
+
+
+.tvBorder {
+    margin-top: 3vh;
+    width: 55%;
+    position: absolute;
+    z-index: 1;
+    // background-color: white;
+}
+
+.imgAndText {
+    display: flex;
+    justify-content: space-between;
+
+    .projectsImg {
+        margin-top: 4%;
+        margin-left: 7%;
+        position: absolute;
+        width: 30%;
+    }
+    
     .projectsDescription {
         width: 35%;
-        margin-left: 52vw;
-        margin-top: -60vh;
+        padding-right: 5%;
+        padding-top: 4%;
     }
 }
+
+
 
 // responsive_______________________________________
-@media (max-width: 1024px) {
-    .portfolioText {
-        min-width: 90%;
-        padding-top: 2%;
-    }
-}
-
-@media (max-width: 768px) {
-    .portfolio {
-
-        img {
-            width: 300px;
-            max-height: 200px;
-        }
-
-        .portfolioText {
-            font-size: x-small;
-        }
-    }
-}
-
-@media (max-width: 400px) {
-
-    .projects {
-        display: flex;
-        justify-content: center;
-
-        .portfolioText {
-            text-align: center;
-            font-size: x-small;
-        }
-    }
-}

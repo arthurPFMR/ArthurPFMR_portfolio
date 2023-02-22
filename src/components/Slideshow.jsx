@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import tvImg from "../assets/images/television.png";
 import getData from "../assets/database/projects.json";
 
-const Slideshow = (props) => {
+const Slideshow = () => {
   const data = getData;
 
   const filterImg = data.projects.map((obj) => obj.image);
   const filterDescription = data.projects.map((obj) => obj.description);
   const filterTitle = data.projects.map((obj) => obj.title);
 
-  const [indexProjects, setIndexProjects] = useState({ index: 1 });
+  const [indexProjects, setIndexProjects] = useState({ index: 0 });
 
   const handleNextBtn = () => {
     if (
@@ -17,15 +18,12 @@ const Slideshow = (props) => {
     ) {
       return setIndexProjects({
         index: 0,
-        // description: 0,
       });
     } else {
       indexProjects.index++;
-      // indexOfProjects.description++;
 
       return setIndexProjects({
         index: indexProjects.index,
-        // description: indexOfProjects.description,
       });
     }
   };
@@ -34,11 +32,9 @@ const Slideshow = (props) => {
     if (indexProjects.index <= 0) {
       return setIndexProjects({
         index: (filterImg.length - 1) & (filterDescription.length - 1),
-        // description: props.length - 1,
       });
     } else {
       indexProjects.index--;
-      // indexProjects.description--;
 
       return setIndexProjects({
         index: indexProjects.index,
@@ -47,15 +43,24 @@ const Slideshow = (props) => {
   };
 
   return (
-    <div className="projects">
-      <button className="previousBtn" onClick={handlePreviousBtn}></button>
-      <div>
-        <img className="projectsImg" src={filterImg[indexProjects.index]} alt={filterTitle[indexProjects.index]} />
-       <p className="projectsDescription" >{filterDescription[indexProjects.index]}</p>
+    <div className="projectsSlide">
+      <div className="slideBtn">
+        <button className="projectsBtn prevBtn" onClick={handlePreviousBtn}></button>
+        <button className="projectsBtn nextBtn" onClick={handleNextBtn}></button>
+        </div>
+      <div className="imgAndText">
+        <div className="onTvImg">
+          <img className="tvBorder" src={tvImg} alt="cadre tv" />
+          <img
+            className="projectsImg"
+            src={filterImg[indexProjects.index]}
+            alt={filterTitle[indexProjects.index]}
+          />
+        </div>
+        <p className="projectsDescription">
+          {filterDescription[indexProjects.index]}
+        </p>
       </div>
-      <button className="previousBtn" onClick={handleNextBtn}></button>
-      {/* {console.log(setIndexProjects)} */}
-      <p className="portofolioText"></p>
     </div>
   );
 };
