@@ -42,14 +42,14 @@ const Slideshow = (props) => {
 
   return (
     <div className="projects">
-      <button className="previousBtn" onClick={handlePreviousBtn}></button>
-      {props.data.map((data) => (
+      <button className="previousBtn"  onClick={handlePreviousBtn}></button>
+      {console.log(handlePreviousBtn)}
         <div>
-          <img src={data.image} alt={data.title} />
-          <div>{data.description}</div>
+          <img src={props.image} alt={props.title} />
+          <div>{props.description}</div>
         </div>
-      ))}
       <button className="previousBtn" onClick={handleNextBtn}></button>
+      {console.log(handleNextBtn)}
       <p className="portofolioText"></p>
     </div>
   );
