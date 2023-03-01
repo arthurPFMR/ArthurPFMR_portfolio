@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
 import LogoImg from "../assets/images/logo.ico";
-import NavbarIcon from "../assets/images/croix.ico";
 
 const Navbar = () => {
 
@@ -57,7 +56,7 @@ const Navbar = () => {
       <div className="sideNavbar">
         <ul className="icons">
           <Link to="top" spy={true} smooth={true} duration={500}>
-            <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
+            <p>O</p>
           </Link>
           <Link
             to="portfolio"
@@ -66,7 +65,7 @@ const Navbar = () => {
             offset={-90}
             duration={500}
           >
-            <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
+            <p>O</p>
           </Link>
           <Link
             to="career"
@@ -75,7 +74,7 @@ const Navbar = () => {
             offset={-90}
             duration={500}
           >
-            <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
+            <p>O</p>
           </Link>
           <Link
             to="contact"
@@ -84,7 +83,7 @@ const Navbar = () => {
             offset={-90}
             duration={500}
           >
-            <img className="iconImg" src={NavbarIcon} alt="retour accueil" />
+            <p>O</p>
           </Link>
         </ul>
       </div>

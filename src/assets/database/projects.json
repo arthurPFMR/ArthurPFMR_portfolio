@@ -3,39 +3,45 @@
         {
             "id": "1",
             "title": "Kasa",
-            "description": "Créer une application web avec React.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-            "image": "https://i.ibb.co/hsdHkqR/Kasa.png"
+            "description": "Projet réalisé dans le cadre de ma formation OpenClassrooms. Création d’une application web de location immobilière avec React en respectant une maquette Figma (responsive). Le but de ce projet était de créer des composants réutilisables pour les onglets ouvrants et le carrousel de photo. L’implémentation des données a été réalisé à partir d’un fichier JSON.",
+            "image": "https://i.ibb.co/hsdHkqR/Kasa.png",
+            "link": "https://github.com/arthurPFMR/P7_OCR_Kasa"
         },
 
         {
             "id": "2",
             "title": "Kanap",
             "description": "Construisez une API sécurisée pour une application d'avis gastronomiques.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.gggggggggggggg",
-            "image": "https://i.ibb.co/P1vjm0B/kanap.png"
+            "image": "https://i.ibb.co/P1vjm0B/kanap.png",
+            "link": "https://github.com/arthurPFMR/P6_PIQQUANTE_OCR"
         },
         {
             "id": "3",
             "title": "PIIQUANTE",
             "description": "Construisez une API sécurisée pour une application d'avis gastronomiques.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.gggggggggggggg",
-            "image": "https://i.ibb.co/BtSmWNv/piiquante.png"
+            "image": "https://i.ibb.co/BtSmWNv/piiquante.png",
+            "link": "https://github.com/arthurPFMR/P5_Kanap_OC_AP"
         },
         {
             "id": "4",
             "title": "La panthère",
             "description": "Construisez une API sécurisée pour une application d'avis gastronomiques.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.gggggggggggggg",
-            "image": "https://i.ibb.co/gF7tLXF/La-panth-re.png"
+            "image": "https://i.ibb.co/gF7tLXF/La-panth-re.png",
+            "link": "https://github.com/arthurPFMR/P4_LaPanthere"
         },
         {
             "id": "5",
             "title": "OhmyFood",
-            "description": "Construisez une API sécurisée pour une application d'avis gastronomiques.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.gggggggggggggg",
-            "image": "https://i.ibb.co/ZzDbK6h/OMFood.png"
+            "description": "Projet réalisé dans le cadre de ma formation OpenClassrooms. La mission était d’intégrer une maquette d’un site de commande de repas en  ligne. Le but de ce projet était de travailler les animations CSS notamment avec la création d’un load-spinner. Conçu en mobile first et responsive, aucune erreur ni alerte au validateur W3C HTML5 et CSS3. Également le site est compatible avec les dernières versions de Chrome et Firefox.",
+            "image": "https://i.ibb.co/ZzDbK6h/OMFood.png",
+            "link": "https://github.com/arthurPFMR/P3_Ohmyfood"
         },
         {
             "id": "6",
             "title": "Booki",
-            "description": "Construisez une API sécurisée pour une application d'avis gastronomiques.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.gggggggggggggg",
-            "image": "https://i.ibb.co/M2sKDYP/booki.png"
+            "description": "Ce projet a été réalisé dans le cadre de ma formation OpenClassrooms. Le but était d'intégrer une maquette en HTML5 / CSS3, aucune librairie n'était autorisée. Flexbox était également imposé et l'utilisation des grilles CSS (CSS Grid) était proscrit. Site responsive, aucune erreur ni alerte au validateur W3C HTML et CSS, site compatible avec les dernières versions de Chrome et Firefox.",
+            "image": "https://i.ibb.co/M2sKDYP/booki.png",
+            "link": "https://github.com/arthurPFMR/Booki"
         }
     ]
 }

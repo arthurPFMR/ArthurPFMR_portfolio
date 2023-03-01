@@ -4,31 +4,33 @@
     flex-wrap: wrap;
     z-index: 1;
     padding: 2%;
-    margin-top: 20vh;
+    margin-top: 10vh;
     color: white;
     margin-bottom: 15vh;
-    height: 100vh;
+    height: 70vh;
     position: relative;
 }
 
-.slideBtn {
-    margin-left: 48.1%;
-}
 
-.projectsBtn {
-    margin-top: 2.7%;
-    z-index: 3;
-    position: absolute;
-}
+.slideBtn {
+    margin-left: 48.2%;
+    align-items: center;
+
+    .projectsBtn {
+        margin-top: 2.7%;
+        z-index: 3;
+        position: absolute;
+    }
+
     .nextBtn {
         border: solid transparent;
         cursor: pointer;
-        height: 3%;
+        height: 2.8%;
         width: 1.8%;
-        margin-left: 5%;
+        margin-left: 4.9%;
         background-color: transparent;
         border-radius: 25px;
-    
+
         &:hover {
             box-shadow: 0 0 15px 2px rgb(255, 255, 255);
             background-color: white;
@@ -39,23 +41,22 @@
     .prevBtn {
         border: solid transparent;
         cursor: pointer;
-        height: 3%;
+        height: 2.8%;
         width: 1.8%;
         background-color: transparent;
         border-radius: 25px;
-    
+
         &:hover {
             box-shadow: 0 0 15px 2px rgb(255, 255, 255);
             background-color: white;
             opacity: 0.5;
         }
     }
-
-
+}
 
 .tvBorder {
     margin-top: 3vh;
-    width: 55%;
+    width: 55vw;
     position: absolute;
     z-index: 1;
     // background-color: white;
@@ -67,18 +68,110 @@
 
     .projectsImg {
         margin-top: 4%;
-        margin-left: 7%;
+        margin-left: 7.1%;
         position: absolute;
-        width: 30%;
+        width: 30vw;
     }
-    
+
     .projectsDescription {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
         width: 35%;
         padding-right: 5%;
         padding-top: 4%;
+
+        .link {
+
+            a {
+                margin-left: -1vw;
+                padding-top: 3%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $colorTouch;
+                width: auto;
+            }
+
+            img {
+                width: 4vw;
+            }
+
+            p {
+                padding-top: 3%;
+            }
+
+        }
     }
 }
 
 
 
 // responsive_______________________________________
+@media (max-width: 992px) {
+
+    .portfolio {
+        height: 60vh;
+    }
+
+    .tvBorder {
+        width: 82vw;
+    }
+
+    .imgAndText {
+        padding-left: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .projectsImg {
+            width: 45%;
+            margin-top: 10%;
+            margin-left: 11vw;
+        }
+
+        .projectsDescription {
+            padding-top: 62%;
+            width: 80vw;
+        }
+
+        a {
+            margin-top: -2vh;
+
+            img {
+                min-width: 7vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .imgAndText {
+        .projectsImg {
+            margin-left: 10.5%;
+        }
+
+        .projectsDescription {
+            padding-top: 64%;
+            font-size: 0.75rem;
+        }
+
+        a {
+            p {
+                margin-top: -2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .prevBtn {
+        height: 5px;
+    }
+
+    .nextBtn {}
+}

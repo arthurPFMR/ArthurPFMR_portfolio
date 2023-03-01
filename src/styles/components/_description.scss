@@ -6,14 +6,19 @@
     font-size: 7vw;
     font-weight: 700;
     position: relative;
+    height: 80vh;
     
     h1 {
         font-size: 7vw
     }
 
+    .descripionPartTwo {
+       color: $colorTouch;
+    }
+
     img {
         max-width: 22vw;
-        margin-top: 55px;
+        margin-top: 2vh;
         margin-left: 13vw;
         filter: grayscale(1);
         border: solid;
@@ -24,7 +29,7 @@
         padding-left: 0.5rem;
         font-size: 1.8vw;
         height: 5rem;
-        line-height: 4rem;
+        line-height: 4.2rem;
         overflow: hidden;
         width: 100%;
         letter-spacing: 20px;
@@ -33,17 +38,18 @@
 
     .sentence {
         font-size: 1.3vw;
-        font-weight: 700;
+        font-weight: 900;
         font-style: italic;
         letter-spacing: 0.5rem;
-        color: white;
+        color: $colorTouch;
+        opacity: 1;
 
     }
 
     .roller .rolltext {
         position: absolute;
         top: 0;
-        animation: slide 8s infinite;
+        animation: slide 7s infinite;
     }
 }
 

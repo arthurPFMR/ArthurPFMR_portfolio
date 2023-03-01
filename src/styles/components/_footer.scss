@@ -1,9 +1,17 @@
 .footer {
     text-align: center;
     background-color: $black;
-    padding: 1%;
+    opacity: 0.5;
     position: relative;
-    margin-bottom: 1%;
-    height: 40vh;
+    height: 15vh;
     color: white;
+    margin-top: 16vh;
+
+    img, p {
+        height: 8vh;
+        position: relative;
+        z-index: 3;
+
+    }
+
 }

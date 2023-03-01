@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import tvImg from "../assets/images/television.png";
+import gitHub from "../assets/images/gitShiny.webp"
 import getData from "../assets/database/projects.json";
 
 const Slideshow = () => {
@@ -8,13 +9,15 @@ const Slideshow = () => {
   const filterImg = data.projects.map((obj) => obj.image);
   const filterDescription = data.projects.map((obj) => obj.description);
   const filterTitle = data.projects.map((obj) => obj.title);
+  const filterLink = data.projects.map((obj) => obj.link);
 
   const [indexProjects, setIndexProjects] = useState({ index: 0 });
 
   const handleNextBtn = () => {
     if (
       (indexProjects.index >= filterImg.length - 1) &
-      (filterDescription.length - 1)
+      (filterDescription.length - 1) &
+      (filterLink.length - 1)
     ) {
       return setIndexProjects({
         index: 0,
@@ -31,7 +34,7 @@ const Slideshow = () => {
   const handlePreviousBtn = () => {
     if (indexProjects.index <= 0) {
       return setIndexProjects({
-        index: (filterImg.length - 1) & (filterDescription.length - 1),
+        index: (filterImg.length - 1) & (filterDescription.length - 1) & (filterLink.length - 1),
       });
     } else {
       indexProjects.index--;
@@ -51,15 +54,25 @@ const Slideshow = () => {
       <div className="imgAndText">
         <div className="onTvImg">
           <img className="tvBorder" src={tvImg} alt="cadre tv" />
+          <div className="background"></div>
           <img
             className="projectsImg"
             src={filterImg[indexProjects.index]}
             alt={filterTitle[indexProjects.index]}
           />
         </div>
-        <p className="projectsDescription">
+        <div className="projectsDescription">
+        <p>
           {filterDescription[indexProjects.index]}
         </p>
+        <div className="link">
+        <a href={filterLink[indexProjects.index]}>
+          <img src={gitHub} alt="Logo github" />
+          <p>Voire le projet sur GitHub</p>
+          </a>
+        </div>
+        {/* <a href={filterLink[indexProjects.index]}>ici</a> */}
+        </div>
       </div>
     </div>
   );

@@ -9,18 +9,18 @@ const Description = () => {
         <h1>
           {/* changer les p car erreur console DOMnesting */}
         <p className="descripionPartOne">DÉVELOPPEUR</p>
-        <p className="descripionPartTwo margin">FRONTEND</p>
+        <p className="descripionPartTwo margin">WEB</p>
         <p className="descripionPartThree margin">
-          CRÉATIF
+          FRONTEND
           <div className="roller">
             <span className="rolltext">
               CONSCIENCIEUX
               <br />
-              DÉTERMINÉ
+              CRÉATIF
               <br />
               CALME
               <br />
-              AGILE
+              ÉSPRIT D'ÉQQUIPE
               <br />
               <span className="sentence">sensible à l'UX DESIGN</span>
             </span>
